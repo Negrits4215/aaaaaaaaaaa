@@ -1,8 +1,8 @@
 const config = {
-    user    : "" ,
-    password: "" ,
-    server  : "" ,
-    database: "" ,
+    user    : "joral" ,
+    password: "480596" ,
+    server  : "DESKTOP-NAREAUV" ,
+    database: "ProyectoFinal" ,
     options : {
         trustServerCertificate : true,
         trustedConnection      : true
