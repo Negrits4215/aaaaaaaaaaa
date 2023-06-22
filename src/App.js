@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-//import Funciones from './func';
+//import { getTemas, getTemasbyid, getPregunta, getRespuestas } from './func';
 import './App.css';
+
+//let a = await getTemas();
+//let b = await getTemasbyid();
+//let c = await getPregunta();
+//let d = await getRespuestas();
 
 function App() {
   return (
     
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-        <button >asd</button>
+        <button>asd</button>
       </header>
     </div>
   );

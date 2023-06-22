@@ -3,39 +3,35 @@ import preguntaser from "./services/preguntaser";
 import temaser from "./services/temaser";
 import sql from "mssql";
 
-class Funciones{
-
-    getTemas = async() => {
-        let svc = temaser();
+    export async function getTemas() {
+        let svc = new temaser();
         let data;
-        data = svc.getTema();
+        data = await svc.getTema();
         console.log(data)
         return data;
     }
 
-    getTemasbyid = async(idt) => {
-        let svc = temaser();
+    export async function getTemasbyid(idt) {
+        let svc = new temaser();
         let data;
-        data = svc.getTemaByid(idt);
+        data = await svc.getTemaByid(idt);
         console.log(data)
         return data;
     }
 
-    getPregunta = async(idt) => {
-        let svc = preguntaser();
+    export async function getPregunta(idt) {
+        let svc = new preguntaser();
         let data;
-        data = svc.getPregunta(idt);
+        data = await svc.getPregunta(idt);
         console.log(data)
         return data;
     }
 
-    getRespuestas = async(idp) => {
-        let svc = respuestaser();
+    export async function getRespuestas(idp) {
+        let svc = new respuestaser();
         let data;
-        data = svc.getRespuestas(idp);
+        data = await svc.getRespuestas(idp);
         console.log(data)
         return data;
     }
-}
 
-export default Funciones

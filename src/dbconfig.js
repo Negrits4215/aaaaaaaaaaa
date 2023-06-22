@@ -1,6 +1,6 @@
 const config = {
     user    : "joral" ,
-    password: "480596" ,
+    password: "" ,
     server  : "DESKTOP-NAREAUV" ,
     database: "ProyectoFinal" ,
     options : {
